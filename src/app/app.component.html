@@ -1,0 +1,31 @@
+<div class="wrap">
+
+<div class="input-group">
+  <input 
+   type="text"
+   [value]="selectedRecord"
+   class="form-control"
+   placeholder="Start typing..."
+   aria-label="Recipient's username"
+   aria-describedby="basic-addon2"
+   #box
+   (keyup)="onChange(box.value)"
+
+   >
+  <div class="input-group-append">
+    <span
+     class="input-group-text"
+      id="basic-addon2"
+      (click)="toggleRecordDiv()">go</span>
+  </div>
+</div>
+
+   <div id="_div_results" [class]="recordDivClass">
+       <ul>
+         <li *ngFor="let record of records"
+          (click)="setCurrentSelectedId(record)"          
+         >{{record}}</li>         
+       </ul>
+
+     </div>
+</div>

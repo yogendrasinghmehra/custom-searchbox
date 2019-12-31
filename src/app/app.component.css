@@ -1,0 +1,40 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{  
+  
+  margin:5rem
+  
+}
+.input-group-text{
+  cursor: pointer;
+}
+
+#_div_results{
+width: 80%;
+ background:#fff;
+margin: 0;
+padding: 0;
+padding-bottom: 0px;
+box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2),0 0 0 1px rgba(0,0,0,0.08);
+border: 0;
+border-radius: 0 0 12px 12px;
+box-shadow: 0 2px 3px 0
+rgba(32,33,36,0.28);
+padding-bottom: 4px;
+overflow: hidden;
+}
+#_div_results ul{
+  list-style-type: none;  
+  margin: 0;
+  padding:0;
+}
+#_div_results ul>li{
+  padding:10px;
+  cursor: pointer;      
+}
+
+.hidden
+{
+ display:none;
+}
